@@ -28,5 +28,8 @@ public class UnitConverter {
             case 2:
                 result = Converter.fahrenheitToCelsius(value);
                 break;    
-
+            case 3:
+                result = Converter.kgToPounds(value);
+                break;
+                
 }
