@@ -4,4 +4,21 @@ import java.util.Scanner;
 
 public class UnitConverter {
     
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("=== Unit Converter ===");
+        System.out.println("1. Celsius to Fahrenheit");
+        System.out.println("2. Fahrenheit to Celsius");
+        System.out.println("3. Kilograms to Pounds");
+        System.out.println("4. Pounds to Kilograms");
+
+        System.out.print("Choose an option: ");
+        int choice = input.nextInt();
+
+        System.out.print("Enter value: ");
+        double value = input.nextDouble();
+
+        double result;
+        
 }
