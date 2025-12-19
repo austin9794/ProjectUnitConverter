@@ -15,4 +15,15 @@ public class UnitConverter {
         System.out.print("Enter value: ");
         double value = scanner.nextDouble();
 
-        
+        Converter converter;
+
+        if (choice == 1) {
+            converter = new TemperatureConverter();
+        } else {
+            converter = new WeightConverter();
+        }
+
+        double result = converter.convert(value);
+        System.out.println("Result: " + result);
+    }
+}
