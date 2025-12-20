@@ -34,3 +34,7 @@ public class ConverterGUI {
         inputLabel.setBounds(20, 60, 150, 25);
         frame.add(inputLabel);
 
+        inputField = new JTextField();
+        inputField.setBounds(180, 60, 180, 25);
+        frame.add(inputField);
+
