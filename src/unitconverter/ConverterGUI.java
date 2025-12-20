@@ -46,3 +46,7 @@ public class ConverterGUI {
         resultLabel.setBounds(20, 150, 350, 25);
         frame.add(resultLabel);
 
+        convertButton.addActionListener(new ConvertAction());
+
+        frame.setVisible(true);
+
