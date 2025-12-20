@@ -51,3 +51,11 @@ public class ConverterGUI {
         frame.setVisible(true);
     }
 
+    private class ConvertAction implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                double value = Double.parseDouble(inputField.getText());
+                String selected = (String) conversionBox.getSelectedItem();
+                double result = 0;
+
