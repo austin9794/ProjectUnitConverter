@@ -59,3 +59,17 @@ public class ConverterGUI {
                 String selected = (String) conversionBox.getSelectedItem();
                 double result = 0;
 
+                switch (selected) {
+                    case "Celsius → Fahrenheit":
+                        result = TemperatureConverter.celsiusToFahrenheit(value);
+                        break;
+                    case "Fahrenheit → Celsius":
+                        result = TemperatureConverter.fahrenheitToCelsius(value);
+                        break;
+                    case "Kilograms → Pounds":
+                        result = WeightConverter.kgToLb(value);
+                        break;
+                    case "Pounds → Kilograms":
+                        result = WeightConverter.lbToKg(value);
+                        break;
+
