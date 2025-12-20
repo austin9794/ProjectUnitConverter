@@ -26,4 +26,5 @@ public class ConverterGUI {
                 "Fahrenheit → Celsius",
                 "Kilograms → Pounds",
                 "Pounds → Kilograms"
+        });
 
