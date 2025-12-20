@@ -74,3 +74,5 @@ public class ConverterGUI {
                         break;
                 }
 
+                resultLabel.setText("Result: " + result);
+
