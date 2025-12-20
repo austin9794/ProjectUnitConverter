@@ -40,4 +40,8 @@ public class UnitConverter {
         System.out.println("Fahrenheit: " + f);
         }
 
-        
+        private static void convertWeight(Scanner scanner) {
+        System.out.print("Enter Kilograms: ");
+        double kg = scanner.nextDouble();
+        double lb = kg * 2.20462;
+        System.out.println("Pounds: " + lb);
