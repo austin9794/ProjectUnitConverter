@@ -30,3 +30,7 @@ public class ConverterGUI {
         conversionBox.setBounds(180, 20, 180, 25);
         frame.add(conversionBox);
 
+        JLabel inputLabel = new JLabel("Enter value:");
+        inputLabel.setBounds(20, 60, 150, 25);
+        frame.add(inputLabel);
+
