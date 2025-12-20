@@ -14,4 +14,4 @@ public class UnitConverter {
             System.out.println("0. Exit");
             System.out.print("Choose an option: ");
 
-            
+             int choice = scanner.nextInt();
