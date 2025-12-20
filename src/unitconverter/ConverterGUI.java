@@ -17,5 +17,9 @@ public class ConverterGUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
+        JLabel title = new JLabel("Select Conversion:");
+        title.setBounds(20, 20, 150, 25);
+        frame.add(title);
+
         
 
