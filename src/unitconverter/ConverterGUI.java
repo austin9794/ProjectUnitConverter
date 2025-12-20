@@ -81,4 +81,10 @@ public class ConverterGUI {
                         "Please enter a valid number",
                         "Input Error",
                         JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+    }
+
+
 
