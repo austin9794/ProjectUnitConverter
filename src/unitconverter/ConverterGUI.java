@@ -49,4 +49,5 @@ public class ConverterGUI {
         convertButton.addActionListener(new ConvertAction());
 
         frame.setVisible(true);
+    }
 
