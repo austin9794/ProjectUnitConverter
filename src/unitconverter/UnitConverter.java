@@ -32,3 +32,9 @@ public class UnitConverter {
              }
             }
         }
+
+        private static void convertTemperature(Scanner scanner) {
+        System.out.print("Enter Celsius: ");
+        double c = scanner.nextDouble();
+        double f = (c * 9 / 5) + 32;
+        System.out.println("Fahrenheit: " + f);
