@@ -15,3 +15,17 @@ public class UnitConverter {
             System.out.print("Choose an option: ");
 
              int choice = scanner.nextInt();
+
+             switch (choice) {
+                case 1:
+                    convertTemperature(scanner);
+                    break;
+                case 2:
+                    convertWeight(scanner);
+                    break;
+                case 0:
+                    running = false;
+                    System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid option. Try again.");
