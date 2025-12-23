@@ -60,6 +60,15 @@ public class ConverterGUI extends JFrame {
     private void updateConversions() {
         conversionBox.removeAllItems();
 
+        if (categoryBox.getSelectedItem().equals("Temperature")) {
+            conversionBox.addItem("Celsius → Fahrenheit");
+            conversionBox.addItem("Fahrenheit → Celsius");
+        } else {
+            conversionBox.addItem("Kg → Lb");
+            conversionBox.addItem("Lb → Kg");
+        }
+    }
+
 
 
 
