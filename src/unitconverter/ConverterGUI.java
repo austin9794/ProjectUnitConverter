@@ -83,7 +83,9 @@ public class ConverterGUI extends JFrame {
                 case "Fahrenheit → Celsius":
                     result = TemperatureConverter.fahrenheitToCelsius(input);
                     break;
-
+                case "Kg → Lb":
+                    result = WeightConverter.kgToLb(input);
+                    break;
 
 
 
