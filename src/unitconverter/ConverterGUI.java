@@ -54,6 +54,9 @@ public class ConverterGUI extends JFrame {
         add(centerPanel, BorderLayout.CENTER);
         add(convertButton, BorderLayout.SOUTH);
 
+        setVisible(true);
+    }
+
 
 
 
