@@ -61,6 +61,12 @@ public class ConverterGUI extends JFrame {
         conversionBox.removeAllItems();
 
        String category = (String) categoryBox.getSelectedItem();
+
+       switch (category) {
+        case "Temperature":
+            conversionBox.addItem("Celsius → Fahrenheit");
+            conversionBox.addItem("Fahrenheit → Celsius");
+            break;
     }
 
     private void performConversion() {
