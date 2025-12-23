@@ -49,6 +49,11 @@ public class ConverterGUI extends JFrame {
         JButton convertButton = new JButton("Convert");
         convertButton.addActionListener(e -> performConversion());
 
+        // ===== ADD PANELS =====
+        add(topPanel, BorderLayout.NORTH);
+        add(centerPanel, BorderLayout.CENTER);
+        add(convertButton, BorderLayout.SOUTH);
+
 
 
 
