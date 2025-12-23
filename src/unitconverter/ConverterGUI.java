@@ -57,6 +57,10 @@ public class ConverterGUI extends JFrame {
         setVisible(true);
     }
 
+    private void updateConversions() {
+        conversionBox.removeAllItems();
+
+
 
 
 
