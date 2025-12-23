@@ -78,8 +78,8 @@ public class ConverterGUI extends JFrame {
             conversionBox.addItem("Centimeters → Meters");
             conversionBox.addItem("Meters → Centimeters");
             break;
-                 
-    }
+       }
+ }
 
     private void performConversion() {
         try {
