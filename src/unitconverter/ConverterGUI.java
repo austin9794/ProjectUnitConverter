@@ -93,6 +93,13 @@ public class ConverterGUI extends JFrame {
 
             outputField.setText(String.valueOf(result));
 
+            } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(
+                    this,
+                    "Please enter a valid number.",
+                    "Input Error",
+                    JOptionPane.ERROR_MESSAGE
+
 
 
 
