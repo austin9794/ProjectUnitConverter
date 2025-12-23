@@ -106,7 +106,10 @@ public class ConverterGUI extends JFrame {
                     break; 
                 case "Kilometers → Meters":
                     result = LengthConverter.kilometersToMeters(input);
-                    break;          
+                    break;     
+                 case "Centimeters → Meters":
+                    result = LengthConverter.centimetersToMeters(input);
+                    break;     
             }
 
             outputField.setText(String.valueOf(result));
