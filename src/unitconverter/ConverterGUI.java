@@ -39,4 +39,6 @@ public class ConverterGUI extends JFrame {
         JPanel inputPanel = new JPanel(new GridLayout(4, 2, 10, 10));
         inputPanel.setBackground(Color.WHITE);
 
+        Font labelFont = new Font("Segoe UI", Font.PLAIN, 14);
+
 
