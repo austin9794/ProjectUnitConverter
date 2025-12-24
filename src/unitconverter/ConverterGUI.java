@@ -69,5 +69,10 @@ public class ConverterGUI extends JFrame {
         convertButton.setForeground(Color.WHITE);
         convertButton.setFocusPainted(false);
 
+        convertButton.addMouseListener(new MouseAdapter() {
+    public void mouseEntered(MouseEvent e) {
+        convertButton.setBackground(new Color(30, 136, 229));
+    }
+
 
 
