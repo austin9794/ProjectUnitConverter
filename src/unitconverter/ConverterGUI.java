@@ -34,4 +34,6 @@ public class ConverterGUI extends JFrame {
         titlePanel.setBackground(Color.WHITE);
         titlePanel.add(titleLabel, BorderLayout.CENTER);
 
+        mainPanel.add(titlePanel, BorderLayout.NORTH);
+
 
