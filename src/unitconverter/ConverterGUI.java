@@ -83,6 +83,12 @@ resultLabel.setFont(new Font("Segoe UI", Font.BOLD, 16));
 resultLabel.setForeground(new Color(0, 128, 0));
 resultLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
+JPanel resultPanel = new JPanel(new BorderLayout());
+resultPanel.setBackground(Color.WHITE);
+resultPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+resultPanel.add(resultLabel, BorderLayout.CENTER);
+
+mainPanel.add(resultPanel, BorderLayout.SOUTH);
 
 
 
