@@ -59,4 +59,7 @@ public class ConverterGUI extends JFrame {
         inputPanel.add(valueLabel);
         inputPanel.add(inputField);
 
+        inputPanel.add(new JLabel()); // spacer
+        inputPanel.add(convertButton);
+
 
