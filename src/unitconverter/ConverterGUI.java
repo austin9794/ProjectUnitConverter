@@ -36,4 +36,7 @@ public class ConverterGUI extends JFrame {
 
         mainPanel.add(titlePanel, BorderLayout.NORTH);
 
+        JPanel inputPanel = new JPanel(new GridLayout(4, 2, 10, 10));
+        inputPanel.setBackground(Color.WHITE);
+
 
