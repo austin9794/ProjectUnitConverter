@@ -37,7 +37,7 @@ public class ConverterGUI extends JFrame {
         mainPanel.add(titlePanel, BorderLayout.NORTH);
 
         // Initialise components
-        categoryBox = new JComboBox<>(new String[]{"Temperature", "Weight"});
+        categoryBox = new JComboBox<>(new String[]{"Temperature", "Weight", "Length"});
         conversionBox = new JComboBox<>();
         inputField = new JTextField();
         convertButton = new JButton("Convert");
