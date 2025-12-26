@@ -75,6 +75,14 @@ public class ConverterGUI extends JFrame {
 
         JScrollPane historyScroll = new JScrollPane(historyList);
 
+        JButton clearHistoryButton = new JButton("Clear");
+       clearHistoryButton.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+
+       clearHistoryButton.addActionListener(e -> {
+           history.clear();
+           historyModel.clear();
+        });
+
         // ===== Button Styling =====
         convertButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
         convertButton.setBackground(new Color(33, 150, 243));
