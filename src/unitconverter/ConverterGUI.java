@@ -37,6 +37,11 @@ public class ConverterGUI extends JFrame {
     JButton clearButton = new JButton("Clear");
     JButton closeButton = new JButton("Close");
 
+    clearButton.addActionListener(e -> {
+        history.clear();
+        historyModel.clear();
+    });
+
     public ConverterGUI() {
         // Window setup
         setTitle("Unit Converter");
