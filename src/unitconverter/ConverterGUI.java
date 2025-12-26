@@ -20,6 +20,12 @@ public class ConverterGUI extends JFrame {
     private JButton historyButton;
 
 
+    private void showHistoryDialog() {
+    JDialog dialog = new JDialog(this, "Conversion History", true);
+    dialog.setSize(350, 400);
+    dialog.setLocationRelativeTo(this);
+    dialog.setLayout(new BorderLayout(10, 10));
+    
     public ConverterGUI() {
         // Window setup
         setTitle("Unit Converter");
