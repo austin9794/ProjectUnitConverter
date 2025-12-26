@@ -102,6 +102,10 @@ public class ConverterGUI extends JFrame {
         historyButton = new JButton("History");
         historyButton.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 
+        inputPanel.add(new JLabel()); // spacer
+        inputPanel.add(historyButton);
+
+
 
         convertButton.addMouseListener(new MouseAdapter() {
             public void mouseEntered(MouseEvent e) {
