@@ -83,6 +83,12 @@ public class ConverterGUI extends JFrame {
            historyModel.clear();
         });
 
+        historyPanel.add(historyTitle, BorderLayout.NORTH);
+        historyPanel.add(historyScroll, BorderLayout.CENTER);
+        historyPanel.add(clearHistoryButton, BorderLayout.SOUTH);
+
+        mainPanel.add(historyPanel, BorderLayout.EAST);
+
         // ===== Button Styling =====
         convertButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
         convertButton.setBackground(new Color(33, 150, 243));
