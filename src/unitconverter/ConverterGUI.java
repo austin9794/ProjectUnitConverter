@@ -34,6 +34,9 @@ public class ConverterGUI extends JFrame {
 
     JScrollPane scrollPane = new JScrollPane(historyList);
 
+    JButton clearButton = new JButton("Clear");
+    JButton closeButton = new JButton("Close");
+
     public ConverterGUI() {
         // Window setup
         setTitle("Unit Converter");
