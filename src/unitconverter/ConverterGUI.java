@@ -113,8 +113,8 @@ public class ConverterGUI extends JFrame {
         else if (category.equals("Length")) {
             conversionBox.addItem("Meters → Kilometers");
             conversionBox.addItem("Kilometers → Meters");
-            conversionBox.addItem("Meters → Miles");
-            conversionBox.addItem("Miles → Meters");
+            conversionBox.addItem("Centimeters → Meters");
+            conversionBox.addItem("Meters → Centimeters");
         }
     }
 
