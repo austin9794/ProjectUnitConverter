@@ -5,8 +5,6 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
-
-
 public class ConverterGUI extends JFrame {
 
     private JComboBox<String> categoryBox;
@@ -104,29 +102,6 @@ public class ConverterGUI extends JFrame {
         inputPanel.add(convertButton);
 
         mainPanel.add(inputPanel, BorderLayout.CENTER);
-
-        JPanel historyPanel = new JPanel(new BorderLayout(5, 5));
-        historyPanel.setPreferredSize(new Dimension(160, 0));
-        historyPanel.setBackground(Color.WHITE);
-
-        JLabel historyTitle = new JLabel("History", SwingConstants.CENTER);
-        historyTitle.setFont(new Font("Segoe UI", Font.BOLD, 14));
-
-        JScrollPane historyScroll = new JScrollPane(historyList);
-
-        JButton clearHistoryButton = new JButton("Clear");
-        clearHistoryButton.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-
-       clearHistoryButton.addActionListener(e -> {
-           history.clear();
-           historyModel.clear();
-        });
-
-        historyPanel.add(historyTitle, BorderLayout.NORTH);
-        historyPanel.add(historyScroll, BorderLayout.CENTER);
-        historyPanel.add(clearHistoryButton, BorderLayout.SOUTH);
-
-        mainPanel.add(historyPanel, BorderLayout.EAST);
 
         // ===== Button Styling =====
         convertButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
