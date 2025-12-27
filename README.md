@@ -42,8 +42,4 @@ Java Collections Framework
 
 ArrayList
 
-DefaultListModel
-
 Object-Oriented Programming (OOP)
-
-Event-driven programming
