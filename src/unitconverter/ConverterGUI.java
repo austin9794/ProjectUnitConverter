@@ -89,3 +89,14 @@ public class ConverterGUI extends JFrame {
 
         return panel;
     }
+
+    /* ---------------- RESULT ---------------- */
+
+    private JPanel buildResult() {
+        JPanel panel = new JPanel();
+        resultLabel = new JLabel(" ");
+        resultLabel.setFont(new Font("Segoe UI", Font.BOLD, 16));
+        resultLabel.setForeground(new Color(0, 128, 0));
+        panel.add(resultLabel);
+        return panel;
+    }
