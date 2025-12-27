@@ -48,3 +48,44 @@ public class ConverterGUI extends JFrame {
 
         return header;
     }
+
+    /* ---------------- FORM ---------------- */
+
+    private JPanel buildForm() {
+        JPanel panel = new JPanel(new GridBagLayout());
+        panel.setBorder(BorderFactory.createEmptyBorder(15, 20, 10, 20));
+
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(6, 6, 6, 6);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+
+        categoryBox = new JComboBox<>(new String[]{"Temperature", "Weight", "Length"});
+        conversionBox = new JComboBox<>();
+        inputField = new JTextField();
+
+        updateConversions();
+        categoryBox.addActionListener(e -> updateConversions());
+
+        convertButton = new JButton("Convert");
+        convertButton.addActionListener(e -> performConversion());
+
+        gbc.gridx = 0; gbc.gridy = 0;
+        panel.add(new JLabel("Category:"), gbc);
+        gbc.gridx = 1;
+        panel.add(categoryBox, gbc);
+
+        gbc.gridx = 0; gbc.gridy = 1;
+        panel.add(new JLabel("Conversion:"), gbc);
+        gbc.gridx = 1;
+        panel.add(conversionBox, gbc);
+
+        gbc.gridx = 0; gbc.gridy = 2;
+        panel.add(new JLabel("Value:"), gbc);
+        gbc.gridx = 1;
+        panel.add(inputField, gbc);
+
+        gbc.gridx = 1; gbc.gridy = 3;
+        panel.add(convertButton, gbc);
+
+        return panel;
+    }
