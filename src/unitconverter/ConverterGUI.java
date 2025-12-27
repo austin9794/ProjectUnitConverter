@@ -14,4 +14,5 @@ public class ConverterGUI extends JFrame {
     private JButton historyButton;
     private JButton convertButton;
 
-    
+    private ArrayList<String> history = new ArrayList<>();
+    private DefaultListModel<String> historyModel = new DefaultListModel<>();
