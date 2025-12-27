@@ -1,4 +1,5 @@
-## A simple Java-based unit converter that converts:
+## A desktop-based Unit Converter application built using Java and Swing, allowing users to convert between multiple unit categories with a clean graphical interface and conversion history tracking.
+
 - Celsius ↔ Fahrenheit
 - Kilograms ↔ Pounds
 
