@@ -157,3 +157,32 @@ public class ConverterGUI extends JFrame {
         }
     }
 
+    /* ---------------- HISTORY DIALOG ---------------- */
+
+    private void showHistoryDialog() {
+        JDialog dialog = new JDialog(this, "Conversion History", true);
+        dialog.setSize(300, 350);
+        dialog.setLocationRelativeTo(this);
+
+        JList<String> list = new JList<>(historyModel);
+        JScrollPane scroll = new JScrollPane(list);
+
+        JButton clear = new JButton("Clear");
+        clear.addActionListener(e -> {
+            history.clear();
+            historyModel.clear();
+        });
+
+        JButton close = new JButton("Close");
+        close.addActionListener(e -> dialog.dispose());
+
+        JPanel buttons = new JPanel();
+        buttons.add(clear);
+        buttons.add(close);
+
+        dialog.add(scroll, BorderLayout.CENTER);
+        dialog.add(buttons, BorderLayout.SOUTH);
+        dialog.setVisible(true);
+    }
+}
+
