@@ -146,3 +146,14 @@ public class ConverterGUI extends JFrame {
                     break;
             }
 
+            String record = input + " → " + result;
+            history.add(record);
+            historyModel.addElement(record);
+
+            resultLabel.setText("Result: " + result);
+
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Enter a valid number.");
+        }
+    }
+
