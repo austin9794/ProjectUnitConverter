@@ -62,8 +62,15 @@ public class ConverterGUI extends JFrame {
         conversionBox = new JComboBox<>();
         inputField = new JTextField();
 
-        updateConversions();
-        categoryBox.addActionListener(e -> updateConversions());
+       updateConversions();
+
+      categoryBox.addActionListener(e -> {
+    updateConversions();
+    clearFields();
+});
+
+conversionBox.addActionListener(e -> clearFields());
+  
 
         convertButton = new JButton("Convert");
         convertButton.addActionListener(e -> performConversion());
