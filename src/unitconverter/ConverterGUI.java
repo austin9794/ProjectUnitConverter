@@ -1,9 +1,8 @@
 package unitconverter;
 
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.util.ArrayList;
+import javax.swing.*;
 
 public class ConverterGUI extends JFrame {
 
@@ -119,6 +118,11 @@ public class ConverterGUI extends JFrame {
         }
     }
 
+    private void clearFields() {
+    inputField.setText("");
+    resultLabel.setText(" ");
+}
+
     private void performConversion() {
         try {
             double input = Double.parseDouble(inputField.getText());
@@ -156,23 +160,6 @@ public class ConverterGUI extends JFrame {
             JOptionPane.showMessageDialog(this, "Enter a valid number.");
         }
     }
-
-    private void clearFields() {
-    inputField.setText("");
-    outputField.setText("");
-    resultLabel.setText("Result:");
-
-   categoryBox.addActionListener(e -> {
-    updateConversions();   // existing method you already have
-    clearFields();
-   });
-
-   conversionBox.addActionListener(e -> clearFields());
-
-
-
-
-
 
     /* ---------------- HISTORY DIALOG ---------------- */
 
